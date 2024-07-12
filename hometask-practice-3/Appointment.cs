@@ -8,16 +8,16 @@ namespace hometask_practice_3
 {
     internal class Appointment
     {
-        private string patientName;
-        private DateTime date;
+        private string customerName;
+        private DateTime dateForAppointment;
 
-        public string PatientName { get; }
-        public DateTime Date { get; }
+        public string CustomerName { get; }
+        public DateTime DateForAppointment { get; }
 
-        public Appointment(string patientName, DateTime date)
+        public Appointment(string customerName, DateTime dateForAppointment)
         {
-            PatientName = patientName;
-            Date = date;
+            CustomerName = customerName;
+            DateForAppointment = dateForAppointment;
         }
     }
 }

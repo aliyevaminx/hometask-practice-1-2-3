@@ -20,7 +20,7 @@ namespace hometask_practice_3
             Appointments = new List<Appointment>();
         }
 
-        public void ScheduleAppointment(Appointment appointment)
+        public void CreateAppointment(Appointment appointment)
         {
             if (Appointments.Count != 0)
             {

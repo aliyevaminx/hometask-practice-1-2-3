@@ -28,14 +28,14 @@ public static class Program
                 {
                     case (int) Options.AddDoctor:
                         Console.WriteLine();
-                        Console.WriteLine("Enter Doctor Name: ");
+                        Console.WriteLine("Enter Name: ");
                         string name = Console.ReadLine();
 
                         hospital.AddDoctor(name);
                         break;
                     case (int) Options.RemoveDoctor:
                         Console.WriteLine();
-                        Console.WriteLine("Enter Doctor Name: ");
+                        Console.WriteLine("Enter Name: ");
                         name = Console.ReadLine();
 
                         hospital.RemoveDoctor(name);
@@ -43,7 +43,7 @@ public static class Program
                     case (int) Options.ViewAllDoctors:
                         hospital.ViewAllDoctors();
                         break;
-                    case (int) Options.ScheduleAppointment:
+                    case (int) Options.CreateAppointment:
                         Console.WriteLine();
                         Console.WriteLine("Enter Doctor to Schedule Appointment: ");
                         name = Console.ReadLine();
@@ -62,7 +62,7 @@ public static class Program
                             bool isTrueDateTime = DateTime.TryParseExact(date, "dd-MM-yyyy HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out newDate);
 
                             if (isTrueDateTime)
-                                doctor.ScheduleAppointment(new Appointment(name, newDate));
+                                doctor.CreateAppointment(new Appointment(name, newDate));
                             else
                                 Console.WriteLine("Enter right date for appointment");
                         }
@@ -79,6 +79,7 @@ public static class Program
                     case (int)Options.Exit:
                         return;
                     default:
+                        Console.WriteLine("Enter right choice");
                         break;
                 }
             }

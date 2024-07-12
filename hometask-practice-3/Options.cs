@@ -12,7 +12,7 @@ namespace hometask_practice_3
         AddDoctor,
         RemoveDoctor,
         ViewAllDoctors,
-        ScheduleAppointment,
+        CreateAppointment,
         ViewAppointmentsForDoctors
     }
 }
