@@ -24,7 +24,7 @@ namespace hometask_practice_3
         {
             var doctor = Doctors.FirstOrDefault(d => d.DoctorName == name);
 
-            if (Doctors.Any(d => d.DoctorName == name)) 
+            if (doctor is not null) 
             { 
                 Doctors.Remove(doctor);
                 Console.WriteLine("Doctor removed successfully");

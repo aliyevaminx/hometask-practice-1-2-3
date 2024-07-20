@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hometask-practice-3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb05fba304bed793de25974b5efb68787c71b301")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5393e793fd83863a4e8251d658b4a385a3c06468")]
 [assembly: System.Reflection.AssemblyProductAttribute("hometask-practice-3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hometask-practice-3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
